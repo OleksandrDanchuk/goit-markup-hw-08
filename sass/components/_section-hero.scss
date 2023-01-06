@@ -1,0 +1,95 @@
+/* MAIN */
+.section-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  & .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 768px) {
+    & .hero__title {
+      width: 360px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    & .hero__title {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
+  }
+}
+
+.overl {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/herobg_tel.jpg);
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/herobg_tel2x.jpg);
+  }
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/herobg_tab.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/herobg_tab2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/herobg_desktop.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/herobg_desktop2x.jpg);
+    }
+  }
+}
+
+.hero__btn {
+  min-width: 200px;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border-width: 0;
+
+  padding: 10px 24px;
+  margin: 0 auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
+}

@@ -1405,10 +1405,6 @@ body {
   letter-spacing: 0.06em;
 }
 
-.icon-send {
-  margin-left: 10px;
-}
-
 /* MODAL */
 .backdrop {
   position: fixed;

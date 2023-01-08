@@ -915,7 +915,10 @@ body {
 }
 @media screen and (max-width: 479px) {
   .clients-list {
-    min-width: 450px;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -970,7 +973,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .client-link {
-    width: 200px;
+    width: auto;
     height: 92px;
   }
 }
@@ -1928,4 +1931,7 @@ body {
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
